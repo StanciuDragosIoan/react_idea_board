@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Idea Board */
+
+.idea-board{
+   background: #edaf45;
+}
+
+.idea-btn{
+  width:5rem;
+}
