@@ -10,7 +10,9 @@ const App = () => {
     <div className="App">
         <Navbar/>
         <IdeaBoard/>
+        {/* <IdeaItem/>
         <IdeaItem/>
+        <IdeaItem/> */}
    
     </div>
   );

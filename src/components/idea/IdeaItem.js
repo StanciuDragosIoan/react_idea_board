@@ -1,26 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class IdeaItem extends Component {
-    constructor(){
-
-        super();
-
-        this.state = {
-            id: '1',
-            title: 'idea title',
-            body: 'idea body',
-            category: 'improvement'  //improvement, positive feedback, to do, pending/blocked
-        };
-    }
-
-    render() {
-
-      
+    render(props) {
         return (
-            <div className="card text-center">
-                <h3>Idea: {this.state.id}</h3>
-                <h4>Title: {this.state.title}</h4>
-                <p></p>
+            <div className="card text-center col-sm-12 col-md-3">
+                <h3>{this.props.title}</h3>
+                <h4>{this.props.body}</h4>
+                <p>{this.props.category}</p>
             </div>
         )
     }
