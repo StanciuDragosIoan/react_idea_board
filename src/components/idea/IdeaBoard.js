@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IdeaItem from './IdeaItem';
+import AddIdea from './AddIdea';
 
 class IdeaBoard extends Component {
 
@@ -51,7 +52,9 @@ class IdeaBoard extends Component {
     }
 
    
- 
+    addnewIdea = () => {
+        console.log('test');
+    }
 
     render() {
 
@@ -59,6 +62,12 @@ class IdeaBoard extends Component {
 
         return (
             <div className="idea-board">
+                <button 
+                    className="btn btn-dark m-5"
+                    onClick={this.addnewIdea}
+                >
+                        Add new Idea
+                    </button>
                 <h1 className="text-center">Idea Board Component</h1>
                 <div className="row py-3 m-3">
 
@@ -66,9 +75,11 @@ class IdeaBoard extends Component {
                                                         title={idea.title}
                                                         body={idea.body}
                                                         category={idea.category}
+                                                        key={idea.id}
                                                     />) } )}
 
                 </div>
+                <AddIdea/> 
              </div>
         )
     }
