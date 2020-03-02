@@ -33,11 +33,11 @@ h1 {
 .board {
   background-color: rgba(248, 236, 129, 0.945);
   box-shadow: var(--box-shadow);
-  padding: 20px;
+  display: flex;
+  padding:1rem;
+  height:auto;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0;
-  height:75vh;
 }
 
 .idea-item{
@@ -48,4 +48,36 @@ h1 {
   line-height: 75px;
   font-size: 30px;
   height:200px;
+
+  margin:2rem;
+
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+ 
+ 
+}
+
+.bg-red{
+  background:red;
+}
+
+.bg-blue{
+  background:blue;
+}
+
+.bg-orange{
+  background:orange;
+}
+
+.bg-green{
+  background:green;
+}
+
+
+@media(max-width:600px){
+  .idea-item{
+    flex-basis: 200px;
+    align-self:auto;
+  }
 }

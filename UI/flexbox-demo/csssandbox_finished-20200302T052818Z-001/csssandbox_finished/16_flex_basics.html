@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      #container {
+        /*by default  this will make all direct children align horizontally in a row */
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* change the direction on the flex items (of the children) to vertical - align them vertically */
+        /* flex-direction: column; */
+
+        /* by default the flex-items (children) don't wrap so if I add more than 12 on a line it will still put them on the same line and I'll have a scroll bar, to change that behaviour I need to set the flex-wrap property to 'wrap' */
+        /* flex-wrap: wrap; */
+
+        /* this line replaces lines 11 and 17 */
+        flex-flow: row wrap;
+      }
+
+      .item {
+        background: #f4f4f4;
+        border: #ccc solid 1px;
+        padding: 1rem;
+        /* add margin */
+        margin: 0.75rem;
+        text-align: center;
+        /* this line makes the flex-items (the children) span across the whole container (even if I resize it) */
+        flex: 1;
+      }
+
+      .item:first-child {
+        /* this extra line will make the item 2 be 50% of the width of item 1 (add 3 to make it 3 times smaller, 4, etc... */
+        /* flex: 2; */
+        flex: 1;
+      }
+    </style>
+    <title>Flex Basics</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item"><h3>Item 1</h3></div>
+      <div class="item"><h3>Item 2</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EM & REM Units</title>
+    <style>
+      /* em */
+      /* .box1 {
+        font-size: 20px;
+      }
+
+      .box1 p {
+        font-size: 1.5em;
+        padding: 1em;
+      }
+
+      .box1 ul {
+        font-size: 1.2em;
+      } */
+
+      /* rem */
+
+      html {
+        /* font-size: 10px; */
+        font-size: 62.5%; /*this means 10px*/
+      }
+      .box2 h3 {
+        font-size: 2rem;
+      }
+
+      .box2 p {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box1">
+      <h3>Bo One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor,
+        placeat quo quidem quas suscipit nesciunt culpa maiores esse quae?
+      </p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="box2">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor,
+        placeat quo quidem quas suscipit nesciunt culpa maiores esse quae?
+      </p>
+    </div>
+  </body>
+</html>
+<!-- em are based on the parent element's font size (trouble if I have nested elements and the font-size keeps increasing unexpectedly) 
+
+rem are based on the root font-size (16px by default)
+-they are awesome for browser compatibility (and if I resize stuff in browser, em units have no effect but rem units do-->

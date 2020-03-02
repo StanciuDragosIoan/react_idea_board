@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Media Queries</title>
+    <style>
+      /* mediaqueryes can be vertical and horizontal */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: grey;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      /* smartphones */
+      @media (max-width: 500px) {
+        body {
+          background: red;
+        }
+
+        #smartPhone h1 {
+          display: block;
+        }
+      }
+
+      /* tablet */
+      @media (min-width: 501px) and (max-width: 760px) {
+        body {
+          background: blue;
+        }
+
+        #tablet h1 {
+          display: block;
+        }
+      }
+
+      /* normal size */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: green;
+        }
+
+        #normalScreen h1 {
+          display: block;
+        }
+      }
+
+      /* wide screen */
+      @media (min-width: 1201px) {
+        body {
+          background: black;
+        }
+
+        #widescreen h1 {
+          display: block;
+        }
+      }
+
+      /* landscape */
+
+      @media (max-height: 500px) {
+        body {
+          background: orange;
+        }
+
+        #landScape h1 {
+          display: block;
+        }
+      }
+    </style>
+
+    <!-- note how I put the styles for diff device inseparate sheet (and not that the sheet will only apply below
+      768px) this stylesheet must also be under the main style sheet(the style tag in our case)-->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px;"
+      href="mobile.css"
+    />
+  </head>
+  <body>
+    <div id="widescreen">
+      <h1>WideScreen</h1>
+    </div>
+    <div id="normalScreen">
+      <h1>NormalScreen</h1>
+    </div>
+    <div id="tablet">
+      <h1>TabletScreen</h1>
+    </div>
+    <div id="smartPhone"><h1>smartPhoneScreen</h1></div>
+    <div id="landScape">
+      <h1>LandScapeScreen</h1>
+    </div>
+  </body>
+</html>
